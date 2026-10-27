@@ -1,0 +1,38 @@
+========================================
+TRAVELLING SALESMAN PROBLEM
+========================================
+
+Number of Cities: 5
+
+---------- GREEDY METHOD ----------
+Tour:
+0 -> 1 -> 4 -> 3 -> 2 -> 0
+
+Total Cost: 94
+Execution Time: 0.0000 seconds
+
+---------- SIMULATED ANNEALING ----------
+Initial Solution:
+0 -> 3 -> 2 -> 4 -> 1 -> 0
+
+Initial Cost: 105
+
+Best Tour Found:
+0 -> 1 -> 4 -> 3 -> 2 -> 0
+
+Best Cost: 94
+
+Initial Temperature: 1000
+Cooling Rate: 0.995
+Total Iterations: 100000
+Accepted Moves: 86505
+Worse Moves Accepted: 32293
+Execution Time: 0.0212 seconds
+
+---------- COMPARISON ----------
+Greedy Cost: 94
+Simulated Annealing Cost: 94
+
+Best Method for This Run:
+Both methods produced the same cost.
+========================================

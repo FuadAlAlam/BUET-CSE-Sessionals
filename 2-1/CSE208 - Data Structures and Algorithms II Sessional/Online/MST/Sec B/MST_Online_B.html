@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graphland Transportation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    ul {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Graphland Transportation System</h1>
+
+  <section>
+    <h2>Problem Statement</h2>
+    <p>
+      In the country of <strong>Graphland</strong>, there are <strong>n</strong> cities but no roads or railroads yet.
+      The government wants to connect all cities through an optimal transportation network that minimizes construction cost.
+    </p>
+    <p>
+      Graphland uses the following rule:
+    </p>
+    <ul>
+      <li>If the distance between two cities is <strong>at most <code>r</code></strong>, they belong to the <strong>same state</strong>, and can be connected by a <strong>road</strong>.</li>
+      <li>If the distance is <strong>greater than <code>r</code></strong>, the cities are in <strong>different states</strong>, and must be connected by a <strong>railroad</strong>.</li>
+    </ul>
+    <p>
+      The <strong>cost of building a road or a railroad</strong> is equal to the <strong>Euclidean distance between the two cities</strong>. Your task is to help Graphland build a minimum-cost network such that:
+    </p>
+    <ul>
+      <li>All cities are connected directly or indirectly.</li>
+      <li>The total length of roads and railroads used is minimized.</li>
+      <li>You must report how many <strong>states</strong> are formed.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Input Format</h2>
+    <pre><code>n r
+x1 y1
+x2 y2
+...
+xn yn</code></pre>
+    <ul>
+      <li><code>n</code> — number of cities</li>
+      <li><code>r</code> — distance threshold to determine if two cities are in the same state</li>
+      <li>Each of the next <code>n</code> lines contains two integers <code>xᵢ</code> and <code>yᵢ</code>, representing coordinates of the cities</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Output Format</h2>
+    <p>Print a single line containing three space-separated values:</p>
+    <pre><code>&lt;states&gt; &lt;total_road_length&gt; &lt;total_railroad_length&gt;</code></pre>
+    <ul>
+      <li><code>&lt;states&gt;</code> — the number of connected states</li>
+      <li><code>&lt;total_road_length&gt;</code> — total length of roads used (rounded to nearest integer)</li>
+      <li><code>&lt;total_railroad_length&gt;</code> — total length of railroads used (rounded to nearest integer)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li>Distance between cities is calculated using the Euclidean formula:
+        <pre><code>sqrt((x₂ - x₁)² + (y₂ - y₁)²)</code></pre>
+      </li>
+      <li>Two cities are considered to be in the same state if they can be connected by a series of roads where all edges are ≤ <code>r</code>.</li>
+      <li>Each railroad edge connects two separate states, so:
+        <pre><code>number_of_states = number_of_railroad_edges + 1</code></pre>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Sample Input 1</h2>
+    <pre><code>4 10
+0 0
+0 10
+10 0
+10 10</code></pre>
+    <h2>Sample Output 1</h2>
+    <pre><code>1 30 0</code></pre>
+  </section>
+
+  <section>
+    <h2>Sample Input 2</h2>
+    <pre><code>5 5
+0 0
+0 5
+5 0
+10 10
+20 20</code></pre>
+    <h2>Sample Output 2</h2>
+    <pre><code>3 10 25</code></pre>
+  </section>
+
+  <section>
+    <h2>Sample Input 3</h2>
+    <pre><code>3 100
+0 0
+1 0
+2 0</code></pre>
+    <h2>Sample Output 3</h2>
+    <pre><code>1 2 0</code></pre>
+  </section>
+
+  <section>
+    <h2>Sample Input 4</h2>
+    <pre><code>3 1
+0 0
+100 0
+200 0
+</code></pre>
+    <h2>Sample Output 4</h2>
+    <pre><code>3 0 200</code></pre>
+  </section>
+
+  <section>
+    <h2>Sample Input 5</h2>
+    <pre><code>4 20
+0 0
+40 30
+30 30
+10 10</code></pre>
+    <h2>Sample Output 5</h2>
+    <pre><code>2 24 28</code></pre>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+aabbcc
+a*c*b*

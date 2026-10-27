@@ -1,0 +1,16 @@
+===== final_whistle.log =====
+Argentina wins the World Cup final.
+
+===== opening.log =====
+Argentina starts with possession.
+Spain presses near midfield.
+
+===== cards.log =====
+Spain receives a yellow card.
+Argentina receives a yellow card.
+
+===== goals.log =====
+Spain scores from the left wing.
+Argentina equalizes after a counterattack.
+Argentina takes the lead.
+

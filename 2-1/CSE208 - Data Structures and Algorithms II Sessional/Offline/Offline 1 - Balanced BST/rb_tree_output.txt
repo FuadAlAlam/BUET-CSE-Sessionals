@@ -1,0 +1,31 @@
+unsuccessful
+yes
+10_Phone
+10_Phone(5_Mouse,)
+5_Mouse(1_Charger,10_Phone)
+5_Mouse(1_Charger,10_Phone(,15_Monitor))
+5_Mouse(1_Charger,15_Monitor(10_Phone,20_Laptop))
+5_Mouse(1_Charger,15_Monitor(10_Phone(,13_Keyboard),20_Laptop))
+5_Mouse(1_Charger,15_Monitor(10_Phone(,13_Keyboard),20_Laptop(,25_Router)))
+5_Mouse(1_Charger,15_Monitor(10_Phone(,13_Keyboard),25_Router(20_Laptop,30_Tablet)))
+15_Monitor(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),25_Router(20_Laptop,30_Tablet(28_Speaker,)))
+15_Monitor(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),25_Router(20_Laptop,28_Speaker(27_Camera,30_Tablet)))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),25_Router(20_Laptop,28_Speaker(27_Camera,30_Tablet)))
+Stock left: 8
+Not available
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),25_Router(20_Laptop,28_Speaker(27_Camera,30_Tablet)))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),25_Router(20_Laptop,28_Speaker(27_Camera,30_Tablet)))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),28_Speaker(20_Laptop(,27_Camera),30_Tablet))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),28_Speaker(27_Camera,30_Tablet))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),28_Speaker(,30_Tablet))
+15_MonitorPro(5_Mouse(1_Charger,10_Phone(,13_Keyboard)),28_Speaker)
+5_Mouse(1_Charger,13_Keyboard(10_Phone,15_MonitorPro))
+5_Mouse(1_Charger,13_Keyboard(,15_MonitorPro))
+no
+4
+1 => Charger (2)
+5 => Mouse (2)
+13 => Keyboard(4)
+15 => MonitorPro(20)
+successful
+0

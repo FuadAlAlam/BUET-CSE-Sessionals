@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Building Resilient Networks Amid Risky Connections</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 1rem; background: #f9f9f9; color: #333; }
+    h1 { text-align: center; color: #2c3e50; }
+    pre { background: #272822; color: #f8f8f2; padding: 1rem; overflow-x: auto; border-radius: 5px; }
+    code { font-family: Consolas, monospace; }
+    section { background: white; border-radius: 8px; padding: 20px; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
+    h2 { color: #34495e; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #ecf0f1; }
+    .note { background: #eaf3f8; padding: 10px; border-left: 5px solid #2980b9; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+
+<h1>Building Resilient Networks Amid Risky Connections</h1>
+
+<section>
+  <h2>Problem Statement</h2>
+  <p>Chefland has <strong>N</strong> cities numbered from <code>0</code> to <code>N-1</code>, connected by <strong>M</strong> bidirectional roads. Each road has a construction cost.</p>
+  <p>Some cities are <strong>risky</strong> due to hazards or political issues. To build a reliable network connecting <strong>all safe cities</strong>, the government requires:</p>
+  <ul>
+    <li>All <strong>safe cities must be included and connected</strong>.</li>
+    <li>Roads connected to risky cities cost an <strong>extra penalty per risky endpoint</strong>.</li>
+    <li>For each edge <code>(u, v)</code>, if one endpoint is risky, the road cost increases by penalty <code>P</code>.</li>
+    <li>If both endpoints are risky, the cost increases by <code>2 × P</code>.</li>
+  </ul>
+  <p>Formally, the <strong>effective cost</strong> of an edge <code>(u, v)</code> is:</p>
+  <pre><code>effective_weight = original_weight + (penalty × number_of_risky_endpoints)</code></pre>
+    <p>Your task is to build a network connecting all <strong>safe cities</strong> minimizing the sum of the effective edge weights.</p>
+  
+  <p><strong>You must prioritize connecting safe cities without using risky cities, even if it results in a higher total cost.</strong> Only if it's impossible to connect all safe cities using safe-only paths, should you then consider involving risky cities.</p>
+
+  <div class="note">
+    <strong>Important notes:</strong>
+    <ul>
+      <li>All safe cities must be connected in the resulting network.</li>
+      <li>Risky cities may or may not be included.</li>
+      <li>Penalties are added per edge and per risky endpoint — if a risky city connects multiple edges, penalties accumulate.</li>
+      <li>If it is impossible to connect all safe cities, print <code>-1</code>.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Notes</h2>
+  <p>The solution should proceed in two phases:</p>
+  <ol>
+    <li>First, try to connect all safe cities <em>using only edges between safe cities</em> (these edges have no penalties since they don't involve risky endpoints).</li>
+    <li>If the safe cities are not fully connected after this phase, gradually add risky edges (with penalties applied) in ascending order of their effective weights to connect the remaining disconnected components until all safe cities are connected.</li>
+  </ol>
+  <p>This approach ensures that the solution <strong>prefers safe-only connections</strong> and includes risky edges <strong>only when necessary</strong>.</p>
+</section>
+
+<section>
+  <h2>Input Format</h2>
+  <pre><code>
+N M P
+K
+r1 r2 ... rK
+u1 v1 w1
+u2 v2 w2
+...
+uM vM wM
+  </code></pre>
+  <ul>
+    <li><code>N</code> — number of cities (0 to N-1)</li>
+    <li><code>M</code> — number of roads</li>
+    <li><code>P</code> — penalty cost per risky endpoint per edge</li>
+    <li><code>K</code> — number of risky cities</li>
+    <li>Next line: <code>K</code> space-separated risky city indices <code>r1 r2 ... rK</code></li>
+    <li>Next <code>M</code> lines: roads <code>u_i v_i w_i</code> (bidirectional with cost <code>w_i</code>)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Output Format</h2>
+  <p>If no network can connect all safe cities, print:</p>
+  <pre><code>-1</code></pre>
+  <p>Otherwise, print:</p>
+  <pre><code>
+T
+u1 v1
+u2 v2
+...
+uT vT
+TOTAL_COST
+  </code></pre>
+  <ul>
+    <li><code>T</code> is the number of edges used</li>
+    <li>Next <code>T</code> lines list the edges <code>(u_i v_i)</code> used in the final network</li>
+    <li><code>TOTAL_COST</code> is the sum of all effective edge weights (including penalties)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Sample Input 1</h2>
+  <pre><code>
+5 6 10
+2
+3 4
+0 1 3
+1 2 1
+2 0 3
+1 4 2
+0 4 2
+2 3 6
+  </code></pre>
+
+  <h3>Sample Output 1</h3>
+  <pre><code>
+2
+1 2
+0 1
+4
+  </code></pre>
+
+  <p><strong>Explanation:</strong></p>
+  <ul>
+    <li>Safe cities: <code>{0, 1, 2}</code></li>
+    <li>Risky cities: <code>{3, 4}</code></li>
+    <li>MST connects safe cities using edges 1–2 (1), 0–1 (3)</li>
+    <li>No risky city edges used, so penalty = 0</li>
+    <li>Total cost = 4</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Sample Input 2 (Risky City Inclusion Required)</h2>
+  <pre><code>
+6 5 5
+2
+2 5
+0 1 2
+1 2 3
+2 3 2
+3 4 1
+4 5 4
+  </code></pre>
+
+  <h3>Sample Output 2</h3>
+  <pre><code>
+4
+3 4
+0 1
+2 3
+1 2
+18
+  </code></pre>
+
+  <p><strong>Explanation:</strong></p>
+  <ul>
+    <li>Safe cities: <code>{0,1,3,4}</code></li>
+    <li>Risky cities: <code>{2,5}</code></li>
+    <li>Safe-only edges cannot connect all safe cities (0,1) and (3,4) are disconnected</li>
+    <li>Must include risky city 2 to connect safe groups</li>
+    <li>Effective edge costs add penalty per risky endpoint:</li>
+    <ul>
+      <li>1–2 edge: 3 + 5 = 8</li>
+      <li>2–3 edge: 2 + 5 = 7</li>
+    </ul>
+    <li>Total cost = 2 + 8 + 7 + 1 = 18</li>
+  </ul>
+</section>
+
+</body>
+</html>

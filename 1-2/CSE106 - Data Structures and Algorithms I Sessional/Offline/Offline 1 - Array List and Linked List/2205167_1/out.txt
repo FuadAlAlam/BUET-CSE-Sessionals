@@ -1,0 +1,40 @@
+< |4  35  8  10  98 >
+
+current position is 0
+< |4  35  8  10  98 >
+current element is 4
+< |4  35  8  10  98 >
+moved current position from 0 to 3
+< 4  35  8  |10  98 >
+current position is 3
+< 4  35  8  |10  98 >
+current element is 10
+< 4  35  8  |10  98 >
+moved current position from 3 to 4
+< 4  35  8  10  |98 >
+size is 5
+< 4  35  8  10  |98 >
+did not find 22 in the list
+< 4  35  8  10  |98 >
+inserted 22
+< 4  35  8  10  |22  98 >
+found 22 at 4
+< 4  35  8  10  |22  98 >
+size is 6
+< 4  35  8  10  |22  98 >
+moved current position from 4 to 3
+< 4  35  8  |10  22  98 >
+Resized array from 6 to 12
+appended 18
+< 4  35  8  |10  22  98  18 >
+current position is 3
+< 4  35  8  |10  22  98  18 >
+moved current position to 0
+< |4  35  8  10  22  98  18 >
+removed 4
+< |35  8  10  22  98  18 >
+size is 6
+< |35  8  10  22  98  18 >
+cleared list
+<  >
+Program terminated

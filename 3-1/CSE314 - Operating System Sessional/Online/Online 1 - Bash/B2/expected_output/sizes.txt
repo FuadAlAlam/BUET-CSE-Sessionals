@@ -1,0 +1,4 @@
+138:full_report.log
+76:tactics.dat
+47:schedule.txt
+32:lineup.txt

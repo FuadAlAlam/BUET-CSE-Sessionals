@@ -1,0 +1,9 @@
+No  Op    ALUop(bin)
+0   and   000
+1   or    001
+2   add   010
+3   sub   011
+4   nor   100
+5   sll   101
+6   srl   110
+7   zero  111

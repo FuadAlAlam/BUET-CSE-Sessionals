@@ -1,0 +1,3 @@
+broadcast/FINAL_scoreboard.txt
+reports/FINAL_summary.log
+var/video/FINAL_replay.dat

@@ -1,0 +1,4 @@
+cards.log:2
+final_whistle.log:1
+goals.log:3
+opening.log:2

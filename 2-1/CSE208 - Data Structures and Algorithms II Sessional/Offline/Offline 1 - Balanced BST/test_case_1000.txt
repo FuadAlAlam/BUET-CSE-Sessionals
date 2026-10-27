@@ -1,0 +1,973 @@
+Clr
+Em
+CI 49
+CI 147
+AI 224 "Game Console" 10
+CI 26
+Em
+S
+Itr
+S
+AI 471 "E-reader" 20
+BI 224 6
+AI 102 "Drone" 14
+BI 471 1
+AI 280 "Smartwatch Pro" 13
+BI 280 9
+Em
+AI 159 "Speaker" 10
+AI 443 "Speaker" 23
+CI 388
+S
+CI 34
+AI 475 "Game Console" 26
+AI 61 "VR Headset" 12
+AI 178 "Microphone Max" 15
+AI 143 "E-reader" 11
+AI 324 "Charger" 11
+AI 474 "Charger" 30
+AI 382 "Laptop" 13
+BI 475 8
+Em
+BI 324 7
+AI 300 "Game Console" 25
+CI 224
+AI 238 "Mouse" 4
+AI 129 "Laptop" 13
+AI 429 "SSD" 13
+BI 471 14
+CI 62
+AI 314 "Mouse" 30
+BI 314 7
+AI 124 "Speaker" 25
+AI 384 "VR Headset Pro" 10
+BI 143 3
+AI 306 "Tablet" 7
+AI 19 "VR Headset Pro" 5
+BI 143 1
+BI 475 14
+S
+Itr
+Itr
+Itr
+AI 44 "Game Console Pro" 6
+BI 300 11
+S
+BI 143 1
+BI 429 6
+BI 300 5
+BI 238 13
+BI 61 9
+AI 188 "SSD" 21
+AI 28 "VR Headset Pro" 28
+AI 80 "Game Console" 21
+AI 180 "SSD Pro" 13
+AI 83 "Monitor Pro" 18
+BI 159 13
+BI 429 11
+AI 345 "Monitor" 13
+BI 475 7
+BI 129 6
+BI 102 15
+AI 54 "SSD Pro" 5
+AI 383 "SSD Max" 8
+BI 19 10
+AI 348 "E-reader" 25
+BI 54 4
+AI 82 "Microphone Pro" 17
+AI 495 "SSD" 7
+AI 402 "Phone" 3
+AI 355 "Laptop" 13
+Itr
+CI 158
+BI 314 8
+AI 290 "Keyboard" 3
+AI 405 "VR Headset" 13
+BI 405 1
+Itr
+CI 495
+BI 383 12
+CI 162
+AI 125 "Router Max" 17
+Em
+AI 496 "Camera Pro" 21
+AI 194 "E-reader" 24
+Em
+AI 302 "Speaker" 19
+AI 488 "Tablet" 25
+AI 26 "Speaker" 24
+AI 91 "Camera" 25
+BI 306 6
+AI 170 "Drone" 25
+CI 406
+CI 205
+AI 16 "Tablet" 4
+AI 313 "VR Headset" 14
+BI 16 1
+AI 163 "Drone" 14
+Itr
+AI 297 "SSD" 1
+S
+AI 396 "Monitor" 9
+AI 469 "Router" 28
+BI 82 2
+AI 136 "Tablet Max" 20
+AI 412 "Graphics Card" 27
+BI 124 14
+AI 43 "SSD" 3
+AI 378 "Camera Max" 21
+AI 135 "Camera" 30
+BI 129 1
+AI 447 "Smartwatch" 19
+AI 175 "Mouse" 23
+AI 59 "Mouse" 16
+AI 377 "Laptop Pro" 1
+CI 10
+AI 400 "E-reader Pro" 5
+BI 124 3
+BI 400 11
+AI 450 "Game Console Max" 4
+BI 170 11
+Itr
+BI 412 15
+BI 188 3
+BI 345 11
+CI 354
+AI 220 "Speaker" 9
+AI 498 "Smartwatch" 25
+AI 67 "SSD" 20
+BI 54 4
+AI 475 "Graphics Card" 21
+AI 96 "Tablet" 12
+Itr
+AI 257 "Tablet Pro" 1
+CI 388
+AI 110 "Smartwatch" 16
+CI 294
+AI 422 "VR Headset Pro" 3
+AI 242 "Graphics Card Pro" 30
+AI 80 "Microphone" 28
+Em
+AI 238 "Monitor" 11
+AI 20 "Laptop Pro" 20
+AI 391 "Keyboard Pro" 15
+AI 390 "Graphics Card" 11
+Itr
+CI 95
+BI 498 8
+AI 397 "Game Console" 6
+Itr
+AI 296 "SSD" 22
+AI 361 "VR Headset" 1
+AI 131 "Microphone" 2
+AI 204 "Charger Pro" 28
+Em
+BI 348 15
+BI 16 15
+BI 390 13
+AI 278 "Speaker" 7
+AI 52 "Drone Max" 18
+BI 324 4
+BI 129 13
+AI 235 "SSD Max" 1
+Itr
+AI 393 "Smartwatch" 8
+AI 129 "Tablet Max" 8
+BI 397 12
+AI 489 "Keyboard" 18
+CI 141
+AI 286 "Camera" 24
+AI 341 "Graphics Card" 16
+AI 39 "Smartwatch" 5
+BI 188 10
+Itr
+AI 457 "Camera" 27
+AI 278 "Laptop" 10
+Itr
+AI 242 "Smartwatch" 2
+BI 496 4
+BI 412 11
+AI 367 "Router" 16
+CI 226
+Clr
+S
+Em
+AI 413 "Game Console Pro" 6
+BI 413 10
+AI 180 "Router" 9
+BI 180 4
+AI 407 "Microphone Pro" 4
+AI 380 "Router" 24
+S
+BI 407 6
+CI 439
+AI 420 "Tablet" 17
+CI 383
+AI 71 "Graphics Card" 18
+AI 14 "Game Console Pro" 27
+AI 264 "SSD Pro" 18
+CI 388
+Em
+AI 290 "Drone" 21
+AI 123 "E-reader" 16
+AI 31 "VR Headset Pro" 10
+CI 481
+AI 186 "Speaker" 1
+AI 457 "Game Console Max" 15
+CI 32
+BI 457 1
+AI 397 "Laptop" 26
+AI 316 "E-reader" 8
+CI 403
+AI 87 "Phone" 16
+AI 77 "SSD" 1
+BI 397 15
+AI 136 "Router" 28
+S
+BI 180 9
+AI 157 "Drone Pro" 5
+AI 41 "Camera Pro" 11
+CI 144
+AI 166 "Game Console" 3
+AI 331 "Graphics Card" 27
+BI 14 2
+AI 471 "Tablet" 23
+Em
+AI 391 "Mouse" 24
+Clr
+Em
+AI 126 "Charger" 27
+AI 168 "Charger" 18
+BI 168 2
+Itr
+BI 126 13
+AI 210 "VR Headset" 8
+Clr
+CI 84
+CI 18
+AI 18 "Game Console" 29
+BI 18 2
+AI 180 "SSD" 30
+BI 18 9
+AI 44 "Laptop" 26
+BI 18 10
+Em
+Em
+AI 427 "Microphone" 15
+CI 38
+Em
+BI 44 1
+AI 100 "Mouse Max" 30
+AI 252 "E-reader" 8
+Clr
+Clr
+AI 247 "Tablet" 10
+BI 247 7
+Clr
+CI 353
+Itr
+AI 212 "Charger" 29
+Itr
+AI 179 "Monitor" 25
+AI 379 "Mouse" 14
+CI 474
+CI 176
+Em
+BI 212 3
+CI 451
+Em
+AI 37 "VR Headset" 27
+CI 83
+AI 118 "Keyboard" 23
+Em
+BI 37 15
+AI 375 "Game Console" 19
+CI 476
+Itr
+AI 57 "Charger Max" 12
+AI 485 "Keyboard Pro" 7
+BI 375 6
+AI 236 "E-reader Pro" 7
+BI 379 2
+Itr
+AI 402 "Tablet" 3
+AI 155 "Monitor" 22
+Itr
+AI 108 "Keyboard" 7
+AI 456 "Microphone" 14
+AI 335 "SSD" 27
+Em
+CI 387
+AI 181 "Mouse" 23
+Itr
+AI 181 "Drone" 23
+AI 374 "Router" 9
+S
+S
+AI 305 "Keyboard Pro" 11
+AI 399 "Laptop" 21
+AI 476 "Drone" 2
+AI 164 "E-reader" 19
+AI 339 "E-reader" 8
+AI 215 "Drone" 21
+BI 181 1
+Itr
+AI 434 "Charger" 18
+BI 399 2
+BI 57 9
+AI 363 "Charger" 8
+S
+CI 256
+AI 97 "Mouse" 7
+BI 181 11
+CI 449
+CI 20
+Em
+AI 10 "Monitor Max" 5
+AI 427 "Phone" 9
+AI 329 "Microphone Max" 30
+AI 373 "Laptop" 3
+Itr
+AI 415 "Game Console Max" 23
+AI 245 "Mouse" 23
+BI 476 1
+AI 50 "Smartwatch Pro" 14
+AI 79 "Speaker" 21
+AI 421 "Phone Max" 12
+AI 311 "Game Console Pro" 11
+AI 30 "Game Console" 11
+AI 184 "Smartwatch Pro" 14
+AI 43 "Phone" 30
+BI 335 15
+Em
+S
+AI 294 "Tablet" 13
+AI 397 "Smartwatch" 30
+AI 100 "Smartwatch" 3
+AI 411 "Keyboard" 12
+S
+S
+AI 433 "Camera" 9
+AI 421 "Laptop Pro" 8
+Clr
+AI 73 "Speaker" 29
+BI 73 14
+AI 90 "Phone" 30
+Itr
+AI 271 "Mouse" 2
+S
+AI 360 "Tablet" 1
+CI 291
+S
+AI 239 "Laptop" 1
+AI 51 "Tablet" 10
+AI 224 "Microphone Pro" 25
+BI 73 3
+BI 239 14
+AI 154 "Microphone" 7
+BI 73 4
+AI 212 "E-reader Pro" 20
+CI 209
+Itr
+AI 486 "Monitor Pro" 17
+AI 95 "Phone" 29
+BI 90 8
+AI 462 "Tablet" 4
+S
+Em
+Itr
+Clr
+Itr
+AI 402 "Speaker" 3
+BI 402 9
+CI 457
+AI 117 "Monitor Pro" 26
+AI 194 "VR Headset Pro" 21
+Itr
+AI 436 "Charger" 4
+BI 117 15
+AI 149 "Graphics Card" 19
+AI 306 "E-reader Pro" 30
+AI 396 "Laptop" 22
+BI 149 12
+Itr
+AI 229 "Charger Max" 23
+BI 229 1
+BI 436 4
+AI 457 "Monitor" 7
+CI 278
+Itr
+CI 436
+BI 306 6
+AI 313 "Game Console" 22
+AI 141 "Phone" 30
+AI 306 "Game Console" 17
+AI 411 "Camera" 4
+AI 419 "Charger" 15
+BI 194 15
+BI 229 1
+AI 301 "Graphics Card" 4
+S
+AI 96 "Graphics Card" 27
+AI 79 "Router" 10
+AI 161 "Camera" 16
+Itr
+AI 54 "Keyboard" 17
+CI 454
+S
+S
+AI 193 "Charger" 12
+BI 96 6
+BI 457 1
+BI 396 9
+BI 161 2
+BI 194 9
+AI 129 "Camera" 24
+AI 464 "Camera" 5
+BI 464 14
+AI 119 "Tablet Pro" 3
+BI 193 9
+AI 148 "Charger Pro" 6
+CI 112
+BI 161 3
+AI 370 "Router" 8
+AI 26 "Mouse Max" 10
+AI 269 "VR Headset" 12
+AI 292 "Drone" 30
+AI 354 "Keyboard" 6
+AI 263 "E-reader" 3
+AI 291 "E-reader" 18
+Em
+AI 222 "Tablet" 27
+Em
+S
+BI 291 6
+S
+AI 226 "Keyboard" 24
+BI 129 15
+AI 273 "Graphics Card Max" 17
+BI 54 3
+CI 317
+AI 60 "Tablet Max" 6
+AI 391 "E-reader Pro" 6
+Itr
+Clr
+S
+AI 25 "Laptop" 21
+BI 25 3
+AI 397 "Microphone" 14
+CI 276
+Clr
+AI 199 "Smartwatch Max" 19
+AI 42 "Game Console" 13
+AI 81 "Tablet" 16
+AI 137 "Smartwatch" 3
+CI 111
+AI 338 "Game Console" 13
+AI 290 "Microphone Pro" 12
+AI 239 "Mouse" 2
+AI 402 "Microphone Pro" 7
+S
+CI 183
+CI 496
+AI 312 "Speaker" 27
+AI 236 "Graphics Card Pro" 20
+AI 132 "SSD Pro" 7
+BI 42 1
+AI 222 "Tablet Pro" 25
+AI 208 "Graphics Card" 23
+BI 42 5
+AI 33 "Tablet" 29
+AI 461 "VR Headset" 27
+Clr
+Clr
+AI 25 "Phone" 16
+CI 56
+CI 342
+AI 51 "Monitor" 28
+CI 187
+BI 25 8
+CI 281
+AI 84 "Monitor" 5
+CI 70
+AI 393 "Mouse" 13
+BI 84 14
+AI 374 "Tablet" 6
+AI 139 "Drone" 22
+Clr
+AI 196 "Charger" 8
+AI 191 "SSD" 12
+AI 385 "E-reader" 15
+AI 24 "SSD" 16
+BI 385 3
+AI 107 "Drone" 29
+AI 463 "Phone" 11
+AI 404 "Tablet" 3
+AI 243 "Smartwatch" 10
+BI 404 12
+AI 497 "Keyboard" 21
+AI 250 "Router Max" 27
+BI 107 12
+AI 305 "Router" 18
+AI 313 "Tablet" 17
+BI 24 2
+AI 382 "SSD" 3
+AI 34 "Phone Pro" 7
+AI 198 "Camera" 25
+S
+BI 191 15
+AI 192 "Charger Max" 18
+Itr
+AI 427 "Microphone" 27
+AI 416 "Laptop" 22
+BI 198 1
+BI 385 4
+AI 149 "Keyboard" 29
+Em
+Em
+BI 34 1
+Itr
+BI 382 6
+CI 268
+Em
+AI 66 "Laptop" 20
+AI 454 "Phone" 15
+BI 385 13
+AI 204 "Graphics Card Max" 19
+AI 234 "Speaker Max" 16
+AI 259 "Keyboard" 18
+BI 149 8
+AI 106 "VR Headset" 27
+AI 170 "Speaker" 30
+Em
+BI 192 13
+S
+Itr
+S
+AI 131 "Smartwatch" 15
+AI 148 "Camera" 25
+S
+AI 313 "Drone" 21
+Itr
+AI 326 "Phone" 15
+AI 25 "Tablet" 28
+CI 105
+CI 39
+AI 355 "Camera" 19
+AI 227 "Charger" 17
+AI 213 "Speaker Pro" 11
+AI 224 "Mouse" 5
+AI 454 "SSD Max" 12
+AI 381 "Laptop" 28
+AI 313 "Phone Max" 6
+AI 401 "Laptop" 25
+BI 234 5
+AI 145 "Game Console" 9
+AI 37 "Monitor" 3
+S
+AI 89 "SSD Pro" 18
+AI 185 "Mouse" 22
+CI 317
+CI 30
+AI 410 "Graphics Card" 10
+Em
+AI 334 "Speaker Pro" 8
+Em
+Itr
+Itr
+AI 126 "Charger Max" 21
+CI 10
+BI 250 14
+Em
+Itr
+S
+Clr
+AI 240 "Mouse" 27
+AI 73 "Phone" 11
+AI 469 "SSD Pro" 28
+CI 11
+BI 240 7
+BI 73 1
+S
+AI 261 "Keyboard" 28
+AI 152 "Game Console" 26
+CI 210
+CI 113
+AI 497 "Camera" 27
+AI 15 "Smartwatch Pro" 4
+Itr
+S
+CI 82
+Itr
+BI 152 6
+AI 1 "Keyboard" 11
+AI 107 "Speaker Pro" 23
+BI 152 5
+Em
+AI 210 "Router" 30
+S
+AI 307 "Tablet" 21
+S
+AI 350 "E-reader Pro" 25
+CI 26
+AI 437 "Graphics Card" 26
+BI 350 5
+AI 486 "Drone" 14
+AI 455 "Router" 30
+Itr
+AI 405 "Graphics Card" 14
+Em
+BI 350 6
+AI 263 "Drone" 18
+AI 472 "Speaker" 16
+BI 437 1
+AI 484 "Microphone" 28
+S
+Clr
+CI 436
+AI 271 "Phone" 16
+AI 98 "Monitor Pro" 8
+AI 288 "Microphone Pro" 14
+S
+AI 131 "Game Console" 22
+AI 277 "Laptop" 12
+Itr
+AI 276 "Router Pro" 6
+CI 480
+BI 271 14
+BI 288 8
+BI 98 4
+AI 99 "SSD" 25
+AI 37 "Router" 14
+AI 147 "E-reader Max" 12
+AI 307 "Laptop Pro" 18
+Clr
+AI 26 "Smartwatch Max" 15
+AI 363 "Tablet Pro" 22
+AI 256 "Router" 26
+BI 256 10
+BI 256 15
+AI 91 "Camera" 19
+AI 235 "Keyboard" 18
+Clr
+AI 436 "E-reader" 15
+AI 265 "Game Console" 29
+Itr
+AI 23 "Charger Pro" 18
+AI 460 "Keyboard Pro" 24
+BI 265 13
+S
+AI 414 "E-reader" 18
+Em
+AI 95 "Keyboard" 17
+CI 62
+AI 414 "Speaker" 1
+BI 436 8
+BI 265 6
+AI 361 "Charger" 17
+Em
+AI 285 "Phone Max" 26
+BI 414 14
+S
+BI 285 12
+AI 172 "Camera Pro" 15
+AI 234 "Keyboard" 17
+BI 95 7
+BI 95 10
+S
+Em
+AI 270 "Charger" 10
+AI 148 "Speaker Max" 16
+Clr
+S
+AI 167 "Tablet" 15
+AI 144 "Monitor" 14
+Clr
+AI 52 "Monitor Pro" 20
+CI 464
+AI 422 "Game Console Pro" 2
+Clr
+AI 25 "E-reader" 20
+AI 315 "Router" 22
+BI 25 14
+CI 289
+BI 25 10
+S
+BI 315 3
+AI 113 "Router" 16
+BI 315 4
+BI 315 14
+AI 271 "Router" 28
+CI 277
+AI 46 "Drone" 22
+AI 371 "Microphone" 2
+S
+CI 238
+S
+BI 315 15
+S
+Em
+AI 413 "Game Console" 17
+AI 305 "Drone" 12
+AI 162 "Phone Pro" 23
+AI 314 "Phone Pro" 18
+AI 417 "Tablet" 26
+BI 314 5
+BI 46 15
+AI 199 "Drone Max" 25
+AI 66 "SSD Pro" 12
+AI 4 "Tablet Pro" 15
+S
+Em
+Itr
+Itr
+AI 423 "Drone" 10
+AI 443 "Smartwatch Pro" 15
+AI 164 "Tablet" 19
+AI 113 "Smartwatch" 6
+Itr
+AI 107 "Charger" 28
+BI 423 15
+AI 53 "Graphics Card Pro" 23
+Em
+AI 483 "SSD" 18
+AI 116 "Keyboard" 17
+AI 237 "E-reader" 21
+AI 430 "E-reader" 12
+AI 276 "Graphics Card Pro" 19
+AI 105 "Charger" 18
+AI 117 "Tablet" 25
+AI 259 "Laptop" 15
+BI 259 9
+BI 46 11
+AI 196 "Monitor Pro" 26
+AI 335 "Speaker" 5
+AI 355 "Tablet Pro" 6
+AI 164 "Tablet" 7
+AI 74 "Tablet Pro" 7
+CI 339
+AI 119 "Tablet" 27
+AI 404 "Microphone" 3
+AI 4 "E-reader" 21
+BI 162 14
+AI 153 "VR Headset" 23
+Em
+Itr
+AI 179 "Drone Pro" 29
+AI 419 "Phone Pro" 5
+AI 393 "Phone" 8
+BI 355 9
+AI 277 "Tablet Pro" 6
+AI 483 "Laptop" 30
+CI 407
+CI 33
+AI 403 "Monitor" 1
+AI 209 "Tablet" 20
+AI 452 "Graphics Card" 19
+AI 488 "Laptop" 12
+AI 49 "Speaker" 13
+BI 404 10
+Itr
+AI 230 "Game Console Pro" 8
+BI 314 5
+AI 153 "E-reader" 6
+BI 199 15
+AI 25 "SSD" 29
+Em
+AI 66 "Camera" 23
+Em
+S
+Itr
+BI 119 12
+CI 347
+AI 396 "Graphics Card" 12
+AI 230 "Smartwatch" 2
+CI 343
+BI 179 7
+BI 153 6
+CI 382
+BI 162 5
+AI 198 "Laptop" 30
+Itr
+AI 69 "Drone Pro" 13
+AI 343 "Mouse" 24
+AI 29 "Keyboard Pro" 11
+AI 183 "VR Headset" 5
+BI 277 11
+AI 302 "Monitor" 20
+AI 32 "Monitor Max" 13
+AI 400 "Camera" 7
+Clr
+AI 216 "VR Headset" 28
+CI 484
+S
+AI 19 "SSD Pro" 16
+AI 124 "Smartwatch Pro" 11
+Itr
+CI 290
+BI 124 4
+AI 176 "Tablet Pro" 15
+BI 176 10
+AI 240 "Keyboard Max" 2
+CI 373
+AI 75 "VR Headset Max" 21
+BI 19 6
+BI 240 13
+AI 215 "Drone" 8
+AI 447 "Monitor Pro" 5
+AI 125 "Laptop" 21
+CI 37
+AI 354 "Camera" 25
+AI 188 "Smartwatch" 3
+AI 67 "Game Console" 28
+AI 148 "Monitor" 13
+BI 125 2
+Itr
+Itr
+BI 447 11
+S
+AI 112 "Phone" 20
+Em
+CI 468
+AI 266 "Keyboard" 10
+S
+Itr
+S
+CI 223
+BI 216 10
+AI 275 "Smartwatch" 30
+BI 188 6
+AI 348 "Camera" 8
+AI 12 "Charger" 22
+AI 51 "Monitor" 17
+CI 27
+BI 148 5
+BI 354 14
+Itr
+AI 465 "Monitor Max" 15
+Itr
+S
+AI 49 "Camera Pro" 7
+Itr
+AI 168 "Game Console" 20
+S
+Itr
+Itr
+AI 86 "Camera Pro" 25
+AI 149 "Game Console" 25
+Em
+BI 12 11
+AI 226 "Graphics Card" 23
+Itr
+AI 333 "Game Console" 11
+BI 226 7
+BI 465 15
+CI 87
+Itr
+CI 86
+Clr
+AI 337 "Monitor Pro" 7
+Clr
+AI 336 "Phone" 15
+AI 118 "SSD Pro" 10
+CI 206
+AI 57 "Graphics Card Pro" 18
+BI 336 2
+AI 441 "Camera" 21
+AI 34 "Game Console" 13
+CI 464
+AI 36 "VR Headset" 6
+AI 270 "Speaker" 8
+AI 336 "Monitor" 28
+CI 234
+Em
+Em
+CI 363
+BI 118 13
+AI 38 "Keyboard" 22
+AI 21 "VR Headset" 18
+Itr
+AI 371 "Speaker Pro" 19
+CI 449
+CI 318
+AI 54 "Monitor" 24
+S
+BI 54 12
+AI 185 "Laptop" 12
+AI 398 "E-reader" 3
+Em
+BI 441 7
+AI 229 "Router" 3
+AI 120 "Router Max" 30
+Clr
+AI 243 "Keyboard" 3
+AI 381 "Keyboard" 26
+AI 375 "Speaker" 8
+AI 134 "Router" 28
+AI 205 "Router" 10
+AI 75 "Router" 25
+AI 436 "Charger" 13
+AI 396 "VR Headset" 17
+AI 331 "VR Headset" 19
+AI 484 "Smartwatch Pro" 4
+BI 331 15
+AI 406 "SSD Pro" 30
+CI 498
+BI 436 15
+AI 497 "Smartwatch Pro" 24
+AI 234 "Tablet" 23
+Itr
+BI 134 8
+AI 346 "VR Headset" 13
+AI 80 "Monitor" 9
+AI 424 "VR Headset" 28
+AI 327 "Monitor Max" 5
+Itr
+BI 75 4
+AI 461 "Phone Max" 8
+S
+AI 450 "Speaker" 19
+BI 243 12
+BI 424 1
+AI 360 "E-reader Max" 3
+Itr
+AI 479 "Smartwatch Max" 6
+BI 360 5
+AI 287 "SSD Pro" 20
+CI 201
+AI 262 "Speaker" 28
+CI 492
+Itr
+AI 388 "E-reader Max" 11
+AI 175 "Smartwatch" 20
+BI 346 9
+AI 213 "Camera" 11
+AI 88 "Laptop" 22
+AI 290 "Charger" 25
+BI 406 14
+CI 262
+Em
+AI 329 "Drone" 4
+BI 461 12
+BI 134 10
+BI 213 10
+AI 62 "Microphone" 30
+AI 248 "Tablet" 21
+AI 285 "Game Console" 17
+Clr
+AI 139 "Mouse Max" 15
+Clr
+CI 250
+AI 299 "Microphone" 26
+AI 14 "Graphics Card" 2
+BI 14 9
+AI 38 "Speaker" 11
+BI 299 2
+BI 38 15
+AI 370 "Microphone" 25
+AI 368 "Keyboard" 5
+BI 370 15
+AI 152 "Game Console Max" 12
+AI 45 "VR Headset" 25
+AI 4 "Tablet" 10
+S

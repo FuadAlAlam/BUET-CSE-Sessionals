@@ -1,0 +1,27 @@
+Load Testing Assessment Report
+
+Student ID: 2205167
+Target Websites:
+1. lichess.org
+2. mydramalist.com
+
+1. Comparison of Execution Times
+The following table compares the Shortest (Min), Longest (Max), and Average execution response times across both target websites under 50 and 100 sample loads.
+
+| Target Website | Load Profile | Shortest Execution Time (Min) | Longest Execution Time (Max) | Average Execution Time (Est.) |
+| :--- | :--- | :--- | :--- | :--- |
+| Website 1 (lichess.org) | 50 Samples | 4 ms | 25093 ms | 2732.05 ms |
+| Website 1 (lichess.org) | 100 Samples | 0 ms | 39672 ms | 2692 ms |
+| Website 2 (mydramalist.com) | 50 Samples | 47 ms | 24169 ms | 2847.56 ms |
+| Website 2 (mydramalist.com) | 100 Samples | 40 ms | 27338 ms | 2152.10 ms |
+
+
+2. Comparison of Throughput and Data Transfer
+The following table compares the Average Throughput and network data transfer rates (Reception and Transmission) based on the 100-second ramp-up constraint. 
+
+| Target Website | Load Profile | Average Throughput (Req/sec) | Data Reception (KB/sec) | Data Transmission (KB/sec) |
+| :--- | :--- | :--- | :--- | :--- |
+| Website 1 | 50 Samples | 13.31 | 77.79 | 9.00 |
+| Website 1 | 100 Samples | 27.32 | 156.86 | 18.57 |
+| Website 2 | 50 Samples | 10.86 | 98.13 | 6.84 |
+| Website 2 | 100 Samples | 35.66 | 309.60 | 21.31 |

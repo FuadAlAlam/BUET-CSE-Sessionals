@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Designing a Robust Network with Multiplicative Costs</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 2rem; background: #f9f9f9; color: #333; }
+  h1, h2 { color: #2c3e50; }
+  pre { background: #272822; color: #f8f8f2; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+  code { font-family: Consolas, monospace; }
+  section { background: white; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
+</style>
+</head>
+<body>
+
+<h1>Designing a Robust Network with Multiplicative Costs</h1>
+
+<section>
+  <h2>Problem Statement</h2>
+  <p>
+    A power grid planner is designing a network to connect <strong>N</strong> cities using <strong>M</strong> possible bidirectional transmission lines.
+    Each line has a positive cost.
+  </p>
+  <p>
+    To ensure redundancy and reliability, the planner wants two different connection plans:
+  </p>
+  <ul>
+    <li>A <strong>primary plan</strong> that connects all cities with the <strong>minimum possible product of edge costs</strong>.</li>
+    <li>A <strong>backup plan</strong> that:
+      <ul>
+        <li>Also connects all cities (forms a spanning tree),</li>
+        <li>Has a product of edge costs <strong>strictly greater</strong> than the primary plan,</li>
+        <li>Is the <strong>smallest such product</strong> among all remaining valid spanning trees.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    Your task is to compute the <strong>product of edge weights</strong> for this backup network configuration.
+  </p>
+  <p>
+    If no such plan exists, print <code>-1</code>.
+  </p>
+</section>
+
+<section>
+  <h2>Input Format</h2>
+  <pre><code>N M
+u1 v1 w1
+u2 v2 w2
+...
+uM vM wM</code></pre>
+  <ul>
+    <li><code>N</code> — number of cities (1 ≤ N ≤ 15)</li>
+    <li><code>M</code> — number of available edges (N-1 ≤ M ≤ N×(N-1)/2)</li>
+    <li>Each of the next <code>M</code> lines contains:
+      <ul>
+        <li><code>u_i</code> and <code>v_i</code> — endpoints of the edge (1-based indices)</li>
+        <li><code>w_i</code> — weight of the edge (1 ≤ w_i ≤ 1000)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Output Format</h2>
+  <p>Print a single integer — the product of edge weights in the second-best network plan. If no such plan exists, print <code>-1</code>.</p>
+</section>
+
+<section>
+  <h2>Sample Input 1</h2>
+  <pre><code>4 5
+1 2 2
+2 3 2
+3 4 2
+4 1 2
+1 3 3</code></pre>
+
+  <h2>Sample Output 1</h2>
+  <pre><code>12</code></pre>
+</section>
+
+<section>
+  <h2>Sample Input 2</h2>
+  <pre><code>3 3
+1 2 1
+2 3 1
+1 3 1</code></pre>
+
+  <h2>Sample Output 2</h2>
+  <pre><code>-1</code></pre>
+</section>
+
+</body>
+</html>

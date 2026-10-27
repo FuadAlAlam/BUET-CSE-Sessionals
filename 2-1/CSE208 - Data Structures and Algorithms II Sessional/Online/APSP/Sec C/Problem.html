@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Too Few DSA Labs</title>
+    <style>
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      div.columns {
+        display: flex;
+        gap: min(4vw, 1.5em);
+      }
+      div.column {
+        flex: auto;
+        overflow-x: auto;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+
+      ul.task-list[class] {
+        list-style: none;
+      }
+      ul.task-list li input[type="checkbox"] {
+        font-size: inherit;
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+    </style>
+    <style type="text/css">
+      @font-face {
+        font-family: fira-sans;
+        src: local("FiraSans-Regular");
+      }
+      @font-face {
+        font-family: fira-mono;
+        src: local("FiraMono-Regular");
+      }
+      @font-face {
+        font-family: color-emoji;
+        src: local("Noto Color Emoji"), local("Apple Color Emoji"),
+          local("Segoe UI Emoji"), local("Segoe UI Symbol");
+      }
+      :root {
+        --text-color: #24292e;
+        --background-color: #ffffff;
+        --alt-background-color: #f6f8fa;
+        --link-color: #0366d6;
+        --blockquote-text-color: #6a737d;
+        --blockquote-border-color: #dfe2e5;
+        --header-border-color: #eaecef;
+        --hr-background-color: #e1e4e8;
+        --table-tr-border-color: #c6cbd1;
+        --table-td-border-color: #dfe2e5;
+        --kbd-text-color: #444d56;
+        --kbd-background-color: #fafbfc;
+        --kbd-border-color: #c6cbd1;
+        --kbd-shadow-color: #959da5;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        color: var(--text-color);
+        background-color: var(--background-color);
+        font-family: "Fira Sans", fira-sans, sans-serif, color-emoji;
+        line-height: 1.5;
+        word-wrap: break-word;
+        max-width: 980px;
+        margin: auto;
+        padding: 0 4em;
+      }
+      @media screen and (max-width: 799px) {
+        html {
+          font-size: 14px;
+        }
+        body {
+          padding: 1em;
+        }
+      }
+      @media screen and (min-width: 1280px) {
+        html {
+          font-size: 18px;
+        }
+      }
+      a {
+        background-color: transparent;
+        color: var(--link-color);
+        text-decoration: none;
+      }
+      a:active,
+      a:hover {
+        outline-width: 0;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      strong {
+        font-weight: bold;
+      }
+      img {
+        border-style: none;
+      }
+      hr {
+        box-sizing: content-box;
+        height: 0.25em;
+        padding: 0;
+        margin: 1.5em 0;
+        overflow: hidden;
+        background-color: var(--hr-background-color);
+        border: 0;
+      }
+      hr::before {
+        display: table;
+        content: "";
+      }
+      hr::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+      input {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin: 0;
+        overflow: visible;
+      }
+      [type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: bold;
+        margin: 0;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1.25em;
+      }
+      h4 {
+        font-size: 1em;
+      }
+      h5 {
+        font-size: 0.875em;
+      }
+      h6 {
+        font-size: 0.85em;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0.625em;
+      }
+      blockquote {
+        margin: 0;
+      }
+      ul,
+      ol {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      ol ol,
+      ul ol {
+        list-style-type: lower-roman;
+      }
+      ul ul ol,
+      ul ol ol,
+      ol ul ol,
+      ol ol ol {
+        list-style-type: lower-alpha;
+      }
+      dd {
+        margin-left: 0;
+      }
+      code,
+      kbd,
+      pre {
+        font-family: "Fira Mono", fira-mono, monospace, color-emoji;
+        font-size: 1em;
+        word-wrap: normal;
+      }
+      code {
+        border-radius: 0.1875em;
+        font-size: 0.85em;
+        padding: 0.2em 0.4em;
+        margin: 0;
+      }
+      pre {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.75em;
+      }
+      pre > code {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        word-break: normal;
+        white-space: pre;
+        background: transparent;
+        border: 0;
+      }
+      .highlight {
+        margin-bottom: 1em;
+      }
+      .highlight pre {
+        margin-bottom: 0;
+        word-break: normal;
+      }
+      .highlight pre,
+      pre {
+        padding: 1em;
+        overflow: auto;
+        font-size: 0.85em;
+        line-height: 1.5;
+        background-color: var(--alt-background-color);
+        border-radius: 0.1875em;
+      }
+      pre code {
+        background-color: transparent;
+        border: 0;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        line-height: inherit;
+        word-wrap: normal;
+      }
+      .pl-0 {
+        padding-left: 0 !important;
+      }
+      .pl-1 {
+        padding-left: 0.25em !important;
+      }
+      .pl-2 {
+        padding-left: 0.5em !important;
+      }
+      .pl-3 {
+        padding-left: 1em !important;
+      }
+      .pl-4 {
+        padding-left: 1.5em !important;
+      }
+      .pl-5 {
+        padding-left: 2em !important;
+      }
+      .pl-6 {
+        padding-left: 2.5em !important;
+      }
+      .markdown-body::before {
+        display: table;
+        content: "";
+      }
+      .markdown-body::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+      .markdown-body > *:first-child {
+        margin-top: 0 !important;
+      }
+      .markdown-body > *:last-child {
+        margin-bottom: 0 !important;
+      }
+      a:not([href]) {
+        color: inherit;
+        text-decoration: none;
+      }
+      .anchor {
+        float: left;
+        padding-right: 0.25em;
+        margin-left: -1.25em;
+        line-height: 1;
+      }
+      .anchor:focus {
+        outline: none;
+      }
+      p,
+      blockquote,
+      ul,
+      ol,
+      dl,
+      table,
+      pre {
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+      blockquote {
+        padding: 0 1em;
+        color: var(--blockquote-text-color);
+        border-left: 0.25em solid var(--blockquote-border-color);
+      }
+      blockquote > :first-child {
+        margin-top: 0;
+      }
+      blockquote > :last-child {
+        margin-bottom: 0;
+      }
+      kbd {
+        display: inline-block;
+        padding: 0.1875em 0.3125em;
+        font-size: 0.6875em;
+        line-height: 1;
+        color: var(--kbd-text-color);
+        vertical-align: middle;
+        background-color: var(--kbd-background-color);
+        border: solid 1px var(--kbd-border-color);
+        border-bottom-color: var(--kbd-shadow-color);
+        border-radius: 3px;
+        box-shadow: inset 0 -1px 0 var(--kbd-shadow-color);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        font-weight: bold;
+        line-height: 1.25;
+      }
+      h1:hover .anchor,
+      h2:hover .anchor,
+      h3:hover .anchor,
+      h4:hover .anchor,
+      h5:hover .anchor,
+      h6:hover .anchor {
+        text-decoration: none;
+      }
+      h1 {
+        padding-bottom: 0.3em;
+        font-size: 2em;
+        border-bottom: 1px solid var(--header-border-color);
+      }
+      h2 {
+        padding-bottom: 0.3em;
+        font-size: 1.5em;
+        border-bottom: 1px solid var(--header-border-color);
+      }
+      h3 {
+        font-size: 1.25em;
+      }
+      h4 {
+        font-size: 1em;
+      }
+      h5 {
+        font-size: 0.875em;
+      }
+      h6 {
+        font-size: 0.85em;
+        opacity: 0.67;
+      }
+      ul,
+      ol {
+        padding-left: 2em;
+      }
+      ul ul,
+      ul ol,
+      ol ol,
+      ol ul {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      li {
+        overflow-wrap: break-word;
+      }
+      li > p {
+        margin-top: 1em;
+      }
+      li + li {
+        margin-top: 0.25em;
+      }
+      dl {
+        padding: 0;
+      }
+      dl dt {
+        padding: 0;
+        margin-top: 1em;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+      }
+      dl dd {
+        padding: 0 1em;
+        margin-bottom: 1em;
+      }
+      table {
+        display: block;
+        width: 100%;
+        overflow: auto;
+      }
+      table th {
+        font-weight: bold;
+      }
+      table th,
+      table td {
+        padding: 0.375em 0.8125em;
+        border: 1px solid var(--table-td-border-color);
+      }
+      table tr {
+        background-color: var(--background-color);
+        border-top: 1px solid var(--table-tr-border-color);
+      }
+      table tr:nth-child(2n) {
+        background-color: var(--alt-background-color);
+      }
+      img {
+        max-width: 100%;
+        box-sizing: content-box;
+      }
+      img[align="right"] {
+        padding-left: 1.25em;
+      }
+      img[align="left"] {
+        padding-right: 1.25em;
+      }
+      .task-list-item {
+        list-style-type: none;
+      }
+      .task-list-item + .task-list-item {
+        margin-top: 0.1875em;
+      }
+      .task-list-item input {
+        margin: 0 0.2em 0.25em -1.6em;
+        vertical-align: middle;
+      }
+      :root {
+        --text-color: rgba(0, 0, 0, 0.8);
+        --background-color: #f5f5f5;
+        --alt-background-color: #eeeeee;
+        --link-color: #0d71de;
+        --blockquote-text-color: #747e85;
+        --blockquote-border-color: #d6d8da;
+        --header-border-color: #e1e2e4;
+        --hr-background-color: #d8dadd;
+        --table-tr-border-color: #bdc1c6;
+        --table-td-border-color: #d6d8da;
+        --kbd-text-color: #4e585e;
+        --kbd-background-color: #f1f1f1;
+        --kbd-border-color: #bdc1c6;
+        --kbd-shadow-color: #8c939a;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text-color: #eeeeee;
+          --background-color: #282828;
+          --alt-background-color: #3a3a3a;
+          --link-color: #b5daff;
+          --blockquote-text-color: #a8a8a6;
+          --blockquote-border-color: #525252;
+          --header-border-color: #474747;
+          --hr-background-color: #505050;
+          --table-tr-border-color: #696969;
+          --table-td-border-color: #525252;
+          --kbd-text-color: #cececc;
+          --kbd-background-color: #3c3c3c;
+          --kbd-border-color: #696969;
+          --kbd-shadow-color: #979797;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="problem-too-many-dsa-labs">🧪 Problem: Too Few DSA Labs!</h1>
+    <!-- <h2 id="scenario">🏫 Statement:</h2> -->
+    <p>
+      In the future, the ECE department has <strong>N</strong> DSA labs,
+      connected by <strong>M bidirectional roads</strong>. Each road has a
+      walking cost (effort to move between labs).
+    </p>
+    <p>
+      Each lab can hold only a certain number of students (it has a
+      <strong>capacity</strong>).
+    </p>
+    <p style="color: red">
+      You need to answer <strong>Q queries</strong>. Each query contains the
+      starting lab from where all students enter the lab network.
+    </p>
+    <!-- <code>q<sub>i</sub></code> -->
+    <p>
+      <strong>K students</strong> will enter the network one by one (student 1
+      enters first, followed by student 2, and so on).
+    </p>
+    <p>
+      For each student, determine the <strong>best lab</strong> they should
+      choose as their destination, such that their total walking cost is
+      minimized. Once a student chooses a lab, the lab's capacity is reduced by
+      1.
+    </p>
+    <p style="color: red">
+      Due to renovation work, a few labs are
+      <strong>under maintenance</strong>. Students can't choose the labs under
+      maintenance as their destination or pass through them to reach other labs.
+    </p>
+    <p>
+      <i>
+        Note:
+        <ul>
+          <li>
+            A student
+            <strong
+              >can't choose a lab as destination if it's already full</strong
+            >
+            (capacity reached) or <strong>under maintenance</strong>.
+          </li>
+          <li>
+            However, students
+            <b>can still pass through a lab (even if it is full)</b>
+            to reach other labs. But
+            <b>can't pass through a lab that is under maintenance</b>.
+          </li>
+          <li>
+            If it is impossible for a student to choose a lab as destination,
+            the student gets a cost of
+            <strong>-1</strong>.
+          </li>
+        </ul>
+      </i>
+    </p>
+
+    <h2>⚠️ Special Note:</h2>
+    For this assignment,
+    <b
+      >you are not allowed to use Single Source Shortest Path (SSSP) algorithms
+      like Dijkstra or Bellman-Ford. Instead, you must implement a solution
+      using All Pairs Shortest Path (APSP) approaches such as the Floyd-Warshall
+      algorithm or equivalent logic</b
+    >. This ensures fair grading and emphasizes the intended learning outcome.
+
+    <!-- <hr /> -->
+    <h2 id="input-format">📥 Input Format:</h2>
+    <p>
+      The first line contains three space-separated integers: <b>N</b>,
+      <b>M</b>, and <b>K</b>.
+    </p>
+
+    <p>
+      The second line contains <b>N</b> space-separated integers
+      <b>c<sub>i</sub></b> (capacity of lab <b>i</b>). If a lab is under
+      maintenance, its capacity is <b>-1</b>.
+    </p>
+
+    <p>
+      The next <b>M</b> lines contain three space-separated integers:
+      <b>u<sub>i</sub></b
+      >, <b>v<sub>i</sub></b
+      >, and <b>w<sub>i</sub></b
+      >. This means there is a road from lab <b>u<sub>i</sub></b> to lab
+      <b>v<sub>i</sub></b> with a cost of <b>w<sub>i</sub></b
+      >.
+    </p>
+
+    <p>The next line contains an integer <b>Q</b>, the number of queries.</p>
+
+    <p>
+      The last line contains <b>Q</b> space-separated integers
+      <b>u<sub>i</sub></b> (the starting lab for query <b>i</b>).
+      <b>Note that labs under maintenance are not included as starting labs.</b>
+    </p>
+
+    <pre><code>N M K
+c1 c2 c3 ... cN
+u1 v1 w1
+u2 v2 w2
+...
+uM vM wM
+Q
+u1 u2 u3 ... uQ 
+</code></pre>
+
+    <!-- <hr /> -->
+    <h2 id="output-format">📤 Output Format:</h2>
+    <p>
+      Print <b>Q</b> lines. Each line should contain <b>K</b> space-separated
+      integers <b>c<sub>1</sub></b
+      >, <b>c<sub>2</sub></b
+      >, ... , <b>c<sub>K</sub></b
+      >, where <b>c<sub>i</sub></b> is the cost of the
+      <b>i<sup>th</sup></b> student.
+    </p>
+    <p>
+      If a student can't find a lab with remaining space, print
+      <b>-1</b> for that student.
+    </p>
+    <!-- <hr /> -->
+    <h2 id="sample-input">📦 Sample Input 1: All labs are operational</h2>
+    <pre><code>5 6 5
+1 2 1 1 2
+1 2 2
+4 5 1
+1 4 3
+1 3 1
+3 4 1
+2 4 2
+2
+1 2</code></pre>
+    <h2 id="sample-output">✅ Sample Output 1:</h2>
+    <pre><code>0 1 2 2 2
+0 0 2 2 3
+</code></pre>
+
+    <!-- Explanation -->
+    <h2 id="explanation">🧠 Explanation 1:</h2>
+    <p>
+      In the first query, all students start at <strong>Lab 1</strong>. First
+      student can stay in <b>Lab 1 (Cost 0)</b>. Second student can go to
+      <b>Lab 3 (Cost 1, Path: 1 → 3)</b>. Third student can go to
+      <b>Lab 2 (Cost 2, Path: 1 → 2)</b>. Fourth student can also go to
+      <b>Lab 2 (Cost 2, Path: 1 → 2)</b>. Fifth student can go to
+      <b>Lab 4 (Cost 2, Path: 1 → 3 → 4)</b>.
+    </p>
+
+    <p>
+      In the second query, all students start at <strong>Lab 2</strong>. First
+      student can stay in <b>Lab 2 (Cost 0)</b>. Second student can also stay in
+      <b>Lab 2 (Cost 0)</b>. Third student can go to
+      <b>Lab 1 (Cost 2, Path: 2 → 1)</b>. Fourth student can go to
+      <b>Lab 4 (Cost 2, Path: 2 → 4)</b>. Fifth student can also go to
+      <b>Lab 5 (Cost 3, Path: 2 → 4 → 5)</b>.
+    </p>
+    <h2 id="sample-input">
+      📦 Sample Input 2: Some students didn't find a lab
+    </h2>
+    <pre><code>5 6 5
+1 0 1 1 1
+1 2 2
+4 5 1
+1 4 3
+1 3 1
+3 4 1
+2 4 2
+2
+1 2</code></pre>
+    <h2 id="sample-output">✅ Sample Output 2:</h2>
+    <pre><code>0 1 2 3 -1
+2 2 3 3 -1
+</code></pre>
+
+    <h2 id="sample-input">
+      📦 Sample Input 3: Some labs are under maintenance
+    </h2>
+    <pre><code>5 6 5
+1 1 -1 1 1
+1 2 2
+4 5 1
+1 4 3
+1 3 1
+3 4 1
+2 4 2
+2
+1 2</code></pre>
+    <h2 id="sample-output">✅ Sample Output 3:</h2>
+    <pre><code>0 2 3 4 -1
+0 2 2 3 -1
+</code></pre>
+
+    <h2 id="explanation">🧠 Explanation 3:</h2>
+    <p>
+      In the first query, all students start at <strong>Lab 1</strong>. First
+      student can stay in <b>Lab 1 (Cost 0)</b>. Unlike the previous cases, the
+      second student can't go to <b>Lab 3</b> because it is under maintenance.
+      So, the second student can go to <b>Lab 2 (Cost 2, Path: 1 → 2)</b>. Third
+      student can go to <b>Lab 4 (Cost 3, Path: 1 → 4)</b>. Fourth student can
+      go to <b>Lab 5 (Cost 4, Path: 1 → 4 → 5)</b>. No lab available for fifth
+      student (Cost -1).
+    </p>
+
+    <!-- Marks Distribution -->
+    <h2 id="marks-distribution">🏷️ Tentative Marks Distribution:</h2>
+    <p></p>
+    <ul class="task-list">
+      <li class="task-list-item">
+        <input type="checkbox" disabled checked /> 60%: All labs are
+        operational.
+      </li>
+      <li class="task-list-item">
+        <input type="checkbox" disabled checked /> 10%: Some students didn't
+        find a lab.
+      </li>
+      <li class="task-list-item">
+        <input type="checkbox" disabled checked /> 30%: Some labs are under
+        maintenance.
+      </li>
+    </ul>
+  </body>
+</html>
