@@ -1,0 +1,209 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+% Used to make the table of content clickable. 
+\usepackage{hyperref}
+
+\title{CSE 200 Tutorial II}
+\author{Rakin Haider}
+\date{December 2025}
+
+\begin{document}
+
+\maketitle
+
+% table of content
+\tableofcontents
+% list of figure
+\listoffigures
+
+\section{Figure}
+% Figure 
+    %% Basic
+    \subsection{Basic Figure}
+
+    % \includegraphics[optional_paramenter]{url}
+    \includegraphics[]{Images/CSE_BUET.png}
+    % \includegraphics[]{Images/Fruits.png}
+
+    \pagebreak
+
+    \subsection{Figure Size}
+    %% Figure size
+    \includegraphics[width=6cm]{Images/CSE_BUET.png}
+
+    \includegraphics[width=6cm, height=4cm]{Images/CSE_BUET.png}
+
+    \pagebreak
+
+    %% Figure scale
+    \subsection{Figure Scale}
+    \includegraphics[scale=0.5]{Images/CSE_BUET.png}
+
+    \includegraphics[scale=1.2]{Images/CSE_BUET.png}
+
+    \pagebreak
+    
+    %% Figure rotate
+    \subsection{Figure Rotate}
+    \includegraphics[scale=0.5, angle=45]{Images/CSE_BUET.png}
+
+    \pagebreak
+
+    %% Figure sizing with respect to a document
+    \subsection{Figure size relative to a document} 
+    \includegraphics[width=0.5\linewidth]{Images/CSE_BUET.png} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    \pagebreak
+
+    %% Positioning, Alignment, Captions, and Reference
+    \subsection{Positioning, Alignment, Captions, and Reference}
+
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+    % \includegraphics[]{Images/Albert_Einstein.png}
+
+    \begin{figure}[]
+        \includegraphics[]{Images/Fruits.png}
+        \caption{An image of Fruits}
+    \end{figure}
+
+
+    %htbp
+    \begin{figure}[htbp]
+        \includegraphics[]{Images/Albert_Einstein.png}
+        \caption{An image of Einstein}
+        \label{fig:einstein}
+    \end{figure}
+
+    We can see Einstein in Figure \ref{fig:einstein}. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+    \pagebreak
+
+    \subsubsection{Center Alignment}
+
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[]{Images/Albert_Einstein.png}
+        \caption{An image of Einstein}
+    \end{figure}
+
+    \pagebreak
+
+    \subsubsection{Right Alignment}
+
+    \begin{figure}[htbp]
+        \hfill
+        \includegraphics[]{Images/Albert_Einstein.png}
+        \caption{An image of Einstein}
+    \end{figure}
+
+    \pagebreak
+
+    %% Wrap text around a figure
+    \subsection{Wrap text around a figure}
+    
+    \begin{wrapfigure}{l}{0.5\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/Albert_Einstein.png}
+    \end{wrapfigure}
+
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+    \pagebreak
+    
+    %% Subfigure
+    \subsection{Subfigure}
+
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/Albert_Einstein.png}
+            \caption{Einstein}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/Fruits.png}
+            \caption{Fruit}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/CSE_BUET.png}
+            \caption{CSE BUET Logo}
+        \end{subfigure}
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/Albert_Einstein.png}
+            \caption{Einstein}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/Fruits.png}
+            \caption{Fruit}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.25\linewidth}
+            \includegraphics[width=\linewidth]{Images/CSE_BUET.png}
+            \caption{CSE BUET Logo}
+        \end{subfigure}
+
+        \caption{A figure with many sub-figures.}
+        \label{fig:placeholder}
+    \end{figure}
+
+
+    \pagebreak
+    \subsection{Multiple rows of image}
+
+        \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.4\linewidth}
+            \includegraphics[width=\linewidth]{Images/Albert_Einstein.png}
+            \caption{Einstein}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.4\linewidth}
+            \includegraphics[width=\linewidth]{Images/Fruits.png}
+            \caption{Fruit}
+        \end{subfigure}
+        \\
+        \begin{subfigure}{0.4\linewidth}
+            \includegraphics[width=\linewidth]{Images/CSE_BUET.png}
+            \caption{CSE BUET Logo}
+        \end{subfigure}
+        \caption{A figure with many sub-figures.}
+        \label{fig:placeholder}
+    \end{figure}
+
+    \pagebreak
+
+    % Multicolumn document
+    \subsection{Multicolumn Document}
+
+    \begin{multicols}{2}
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+    % \includegraphics[]{Images/Albert_Einstein.png}
+
+    \begin{figure}[H]
+        \includegraphics[width=\linewidth]{Images/Fruits.png}
+        \caption{An image of Fruits}
+    \end{figure}
+
+    We can see Einstein in Figure \ref{fig:einstein}. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+    \end{multicols}    
+
+\end{document}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="336.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.ShowUserController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="186.0" layoutY="142.0" text="Hello Abid" />
+      <Button layoutX="168.0" layoutY="168.0" mnemonicParsing="false" onAction="#onChangeNameClick" text="Change Name" />
+      <TextField fx:id="nameTextField" layoutX="146.0" layoutY="59.0" promptText="Enter your name: " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,247 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{trees, shapes.geometric, arrows.meta, positioning, calc, fit, backgrounds}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\definecolor{primary}{RGB}{35, 55, 59}
+\definecolor{accent}{RGB}{235, 129, 27}
+\definecolor{success}{RGB}{20, 176, 61}
+\definecolor{nodebg}{RGB}{190, 195, 200}
+\definecolor{labelgreen}{RGB}{0, 100, 0}
+
+\tikzset{
+    hnode/.style={circle, draw=primary, thick, fill=white, minimum size=0.6cm, inner sep=0pt, font=\small},
+    hl/.style={thick, primary},
+    highlight/.style={circle, draw=accent, thick, fill=accent!10, minimum size=0.6cm, inner sep=0pt, font=\small},
+    bhnode/.style={circle, draw=black, thick, fill=nodebg, minimum size=0.65cm, inner sep=0pt, font=\small\bfseries},
+    rootlink/.style={dotted, thick, black},
+    treelink/.style={solid, thick, black},
+    bh/.style={circle, draw=black, thick, fill=nodebg, minimum size=0.45cm, inner sep=0pt, font=\bfseries\sffamily\tiny},
+    bhb/.style={circle, draw=black, thick, fill=blue!80!black, text=white, minimum size=0.45cm, inner sep=0pt, font=\bfseries\sffamily\tiny},
+    bhr/.style={circle, draw=black, thick, fill=red!70!black, text=white, minimum size=0.45cm, inner sep=0pt, font=\bfseries\sffamily\tiny},
+    lnk/.style={thick, black},
+    dlnk/.style={thick, black, densely dotted}
+}
+
+\newcommand{\treeSix}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n6) at (0,0) {6};
+        \node (n44) at (0,-1) {44};
+        \node (n10) at (-1,-1) {10}; \node (n17) at (-1,-2) {17};
+        \node (n29) at (-2,-1) {29};
+        \node (n31) at (-2,-2) {31}; \node (n48) at (-3,-2) {48}; \node (n50) at (-3,-3) {50};
+        \node (n8) at (-4,-1) {8};
+        \node (n22) at (-4,-2) {22}; \node (n23) at (-5,-2) {23}; \node (n24) at (-5,-3) {24};
+        \node (n30) at (-6,-2) {30};
+        \node (n32) at (-6,-3) {32}; \node (n45) at (-7,-3) {45}; \node (n55) at (-7,-4) {55};
+        \draw[lnk] (n6)--(n44); \draw[lnk] (n6)--(n10);
+        \draw[lnk] (n10)--(n17);
+        \draw[lnk] (n6)--(n29); \draw[lnk] (n29)--(n31); \draw[lnk] (n29)--(n48); \draw[lnk] (n48)--(n50);
+        \draw[lnk] (n6)--(n8); \draw[lnk] (n8)--(n22); \draw[lnk] (n8)--(n23); \draw[lnk] (n23)--(n24);
+        \draw[lnk] (n8)--(n30);
+        \draw[lnk] (n30)--(n32); \draw[lnk] (n30)--(n45); \draw[lnk] (n45)--(n55);
+    \end{scope}
+}
+\newcommand{\treeBZero}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n1) at (0,0) {1};
+    \end{scope}
+}
+\newcommand{\treeBOne}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n1) at (0,0) {1};
+        \node (n2) at (0,-1) {2}; \draw[lnk] (n1)--(n2);
+    \end{scope}
+}
+\newcommand{\treeBTwo}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n1) at (0,0) {1};
+        \node (n3) at (0,-1) {3};
+        \node (n2) at (-1,-1) {2}; \node (n4) at (-1,-2) {4};
+        \draw[lnk] (n1)--(n3); \draw[lnk] (n1)--(n2);
+        \draw[lnk] (n2)--(n4);
+    \end{scope}
+}
+\newcommand{\treeBThree}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n1) at (0,0) {1};
+        \node (n5) at (0,-1) {5};
+        \node (n3) at (-1,-1) {3}; \node (n7) at (-1,-2) {7};
+        \node (n2) at (-2,-1) {2};
+        \node (n6) at (-2,-2) {6}; 
+        \node (n4) at (-3,-2) {4}; \node (n8) at (-3,-3) {8};
+        \draw[lnk] (n1)--(n5); \draw[lnk] (n1)--(n3);
+        \draw[lnk] (n3)--(n7);
+        \draw[lnk] (n1)--(n2); \draw[lnk] (n2)--(n6); \draw[lnk] (n2)--(n4); \draw[lnk] (n4)--(n8);
+    \end{scope}
+}
+\newcommand{\treeThree}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n3) at (0,0) {3};
+        \node (n37) at (0,-1) {37}; \draw[lnk] (n3)--(n37);
+    \end{scope}
+}
+\newcommand{\treeEighteen}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n18) at (0,0) {18};
+    \end{scope}
+}
+\newcommand{\treeFifteen}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n15) at (0,0) {15};
+        \node (n33) at (0,-1) {33};
+        \node (n28) at (-1,-1) {28}; \node (n41) at (-1,-2) {41};
+        \draw[lnk] (n15)--(n33); \draw[lnk] (n15)--(n28);
+        \draw[lnk] (n28)--(n41);
+    \end{scope}
+}
+\newcommand{\treeSeven}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n7) at (0,0) {7};
+        \node (n25) at (0,-1) {25}; \draw[lnk] (n7)--(n25);
+    \end{scope}
+}
+\newcommand{\treeTwelve}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n12) at (0,0) {12};
+    \end{scope}
+}
+\newcommand{\treeTwelveMerged}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n12) at (0,0) {12};
+        \node (n18) at (0,-1) {18}; \draw[lnk] (n12)--(n18);
+    \end{scope}
+}
+\newcommand{\treeThreeMerged}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n3) at (0,0) {3};
+        \node (n37) at (0,-1) {37};
+        \node (n7) at (-1,-1) {7}; \node (n25) at (-1,-2) {25};
+        \draw[lnk] (n3)--(n37); \draw[lnk] (n3)--(n7);
+        \draw[lnk] (n7)--(n25);
+    \end{scope}
+}
+\newcommand{\treeThreeFinal}[3]{
+    \begin{scope}[shift={(#1,#2)}, every node/.style={#3}]
+        \node (n3) at (0,0) {3};
+        \node (n37) at (0,-1) {37};
+        \node (n7) at (-1,-1) {7}; \node (n25) at (-1,-2) {25};
+        \node (n15) at (-2,-1) {15};
+        \node (n33) at (-2,-2) {33};
+        \node (n28) at (-3,-2) {28}; \node (n41) at (-3,-3) {41};
+        \draw[lnk] (n3)--(n37); \draw[lnk] (n3)--(n7);
+        \draw[lnk] (n7)--(n25);
+        \draw[lnk] (n3)--(n15); \draw[lnk] (n15)--(n33); \draw[lnk] (n15)--(n28); \draw[lnk] (n28)--(n41);
+    \end{scope}
+}
+
+\title{Binomial Heaps\\ \large An Efficient Data Structure for Merge-Heavy Systems}
+\author{Muttakin Ahmed \and Md. Sium \and Md. Fuad Al Alam}
+\date{\today \\ \vspace{0.5cm} \small CSE200, Bangladesh University of Engineering and Technology}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Motivation \& Basics}
+\textit{Presented by Muttakin Ahmed}
+
+\section{The Mailing Service Problem}
+Imagine we are architecting a mailing service. In this system, we receive mail (requests) from users and must process them sequentially. A foundational constraint is that our system can only handle one request at a time. When simultaneous requests flood the server, a critical question arises: how do we decide which one gets served first?
+
+\section{The Easiest Solution vs. Real-World Constraints}
+The easiest approach is implementing a First-In, First-Out (FIFO) methodology utilizing a standard queue. However, this fails us in practical application because not all users are equal. A simple queue cannot prioritize urgent traffic over regular traffic, which means it cannot properly accommodate premium subscribers. 
+
+We need a data structure that always serves the highest priority item first, regardless of arrival time. This structure is called a Priority Queue, which generally supports operations such as Insert(Request) and Extract-Max() or Extract-Min().
+
+\section{Implementing a Priority Queue: Binary Heaps}
+A standard implementation for a priority queue is a Binary Heap, which is a perfect or almost complete binary tree. It must satisfy the Heap Property:
+\begin{itemize}
+    \item \textbf{Max-Heap:} Every parent is strictly greater than or equal to its children.
+    \item \textbf{Min-Heap:} Every parent is strictly less than or equal to its children.
+\end{itemize}
+
+Using a Binary Heap is highly efficient for basic tasks. Adding (inserting) an element takes $\mathcal{O}(\log n)$ time, and removing (extracting) takes $\mathcal{O}(\log n)$ time as well.
+
+\section{The Problem of Scale and the Merging Bottleneck}
+As our mailing service expands and becomes wildly popular, we may upgrade the servers to use multithreading. Each thread handles a chunk of traffic and builds its own separate heap. When threads complete their chunk, their separate heaps must be merged into the unified master heap. 
+
+This introduces the primary problem with Binary Heaps: merging two binary heaps is extremely slow. Adding elements one by one takes $\mathcal{O}(n \log n)$ time, while creating a brand new array and rebuilding from scratch takes linear $\mathcal{O}(n)$ time.
+
+\section{The Mathematical Analogy \& Solution}
+Imagine physically merging a pile of 25 sticks with a pile of 18 sticks. If added one-by-one, it takes exactly 18 operations, running in strict linear time $\mathcal{O}(n)$. 
+
+However, if we group items in powers of two—mirroring binary numbers—we can optimize this. For example, $25_{10} = 11001_2$ and $18_{10} = 10010_2$. By adding these bit-by-bit mathematically, it only takes approximately 5 steps. Each "bit" represents a different magnitude (1, 2, 4, 8...), dropping the time complexity to logarithmic $\mathcal{O}(\log n)$. 
+
+This concept is the foundation of the \textbf{Binomial Heap}. Instead of one monolithic tree, we use a forest (collection) of structured trees representing powers of 2, allowing us to literally merge heaps by "adding bits".
+
+\chapter{Binomial Trees \& Merging}
+\textit{Presented by Md. Sium}
+
+\section{The Building Blocks: Binomial Trees}
+A Binomial Heap is composed of special trees called Binomial Trees, denoted as $B_k$. Every tree has exactly $2^k$ nodes. We build larger trees by snapping two smaller, identical trees together.
+\begin{itemize}
+    \item A $B_0$ tree has $2^0 = 1$ node.
+    \item A $B_1$ tree is made by making one $B_0$ tree the child of another's root, resulting in $2^1 = 2$ nodes.
+    \item A $B_k$ tree is always created by joining a $B_{k-1}$ tree with another $B_{k-1}$ tree.
+\end{itemize}
+
+\subsection{Standard Properties of a Binomial Forest}
+Standard properties dictate that a $B_k$ tree has a depth of exactly $k$. Furthermore, the root has exactly $k$ children. These children are roots of binomial trees of orders $k-1, k-2, \dots, 0$, which are ordered from left to right.
+
+\section{Representing Arbitrary Numbers of Nodes}
+If Binomial Trees must have exactly $2^k$ nodes, how do we store an odd number of requests? We leverage binary representation. Suppose our heap has exactly 13 nodes. The number 13 in binary is $1101_2$, which breaks down into $8 + 4 + 1$. Therefore, our forest must be made up of exactly: $B_3$, $B_2$, and $B_0$ trees.
+
+Consider merging a heap containing exactly 7 nodes with one containing exactly 19 nodes:
+\begin{itemize}
+    \item 19 in binary is $10011_2$, breaking down to $16 + 2 + 1$. The forest consists of $B_4$, $B_1$, and $B_0$.
+    \item 7 in binary is $0111_2$, breaking down to $4 + 2 + 1$. The forest consists of $B_2$, $B_1$, and $B_0$.
+\end{itemize}
+
+\section{Merging and Carries}
+When merging two trees of the same order, we handle it much like encountering a $1 + 1$ carry operation in binary arithmetic:
+\begin{itemize}
+    \item Keep the smaller root to maintain the min-heap property.
+    \item Make the larger root its leftmost child.
+    \item The order of the tree increases by 1 (carrying the bit to the left).
+    \item We repeat this step until there are no remaining duplicate tree orders.
+\end{itemize}
+Because we only traverse up to $\log n$ trees, a full merge operation takes at most $\mathcal{O}(\log n)$ steps, which is a massive upgrade over $\mathcal{O}(n)$.
+
+\chapter{Operations \& Complexity}
+\textit{Presented by Md. Fuad Al Alam}
+
+\section{The Power of Merge}
+The golden rule of Binomial Heaps is that the entire data structure revolves around the $\mathcal{O}(\log n)$ \textit{Merge} operation. For nearly every major operation—aside from finding a node—we just configure the data slightly and then forcefully call \textit{Merge} to handle the heavy lifting.
+
+\section{Standard Operations}
+
+\subsection{Find Minimum}
+The smallest value in any $B_k$ tree is strictly its root node. Therefore, the smallest value in the entire forest must be one of the root nodes. Scanning the linked list of up to $\log n$ trees takes $\mathcal{O}(\log n)$ time. We usually optimize this by keeping an external pointer directly targeting the global minimum root. By updating this pointer during merges and extractions, Find Minimum becomes a true $\mathcal{O}(1)$ operation.
+
+\subsection{Add (Insert)}
+Adding a singular request to our priority queue is straightforward. We treat the new element not as a standalone item, but as a brand new Binomial Heap containing exactly one node ($B_0$). Because \textit{Merge} runs in $\mathcal{O}(\log n)$ time, our Add operation naturally runs in bounded $\mathcal{O}(\log n)$ time as well.
+
+\subsection{Decrease Key}
+When a premium subscriber upgrades their tier, their priority queue index decreases. We adjust the node's value, but this might violate the min-heap property. To fix this, we push the decreased value upward toward the root, swapping with its parent until the heap property is restored, an action known as "Bubbling up". Because the absolute maximum depth of a tree containing $n$ elements is $\log n$, we can bubble up at most $\log n$ times, yielding a time complexity of $\mathcal{O}(\log n)$.
+
+\subsection{Extract Minimum}
+To process and remove the highest priority mail, we extract the global minimum by removing the minimum root from the linked list of roots. If you delete the root of a $B_k$ tree, its remaining children are exactly the trees $B_{k-1}, B_{k-2}, \dots B_0$. The orphaned children form a perfectly valid, standalone Binomial forest. We treat the children as a second heap and call Merge() to fuse it back into the main forest in $\mathcal{O}(\log n)$ time.
+
+\section{Complexity Summary and Comparisons}
+For multithreaded or distributed systems where heaps must coalesce, Binomial Heaps reign supreme over standard Binary Heaps. In a standard Binary Heap, the \textit{Merge} operation costs $\mathcal{O}(n)$, whereas it only costs $\mathcal{O}(\log n)$ in a Binomial Heap. 
+
+Could we push the limits even further? Yes, using Fibonacci Heaps. Fibonacci Heaps employ severe "lazy evaluation". They throw trees together in $\mathcal{O}(1)$ time and delay actually merging them until an \textit{Extract} call absolutely forces it. This achieves an unheard of $\mathcal{O}(1)$ amortized time for Insert, Merge, and Decrease Key. 
+
+However, in practice, Fibonacci Heaps suffer from immense constant overhead factors. They rely heavily on pointers, which causes massive CPU cache misses, and their implementation is exceptionally complex and prone to errors. Ultimately, Binomial Heaps strike the perfect, practical balance between optimal merge performance and sensible engineering complexity.
+
+\end{document}

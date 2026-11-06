@@ -1,0 +1,152 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{amsmath}
+\title{Demo}
+\author{Tanjeem Azwad Zaman}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoftables
+\pagebreak
+% \input{}
+\section{Introduction}
+    \subsection{Section1.1}
+        This is a subsection. \textbf{Bold text}. \textbf{Quickbold}. \textit{italics}. \ref{tab:table1}\emph{this will be emphasized}. \underline{undelined}
+    \subsection{fonts}
+        \Large{Large Text}. {\huge Huge text} \small{small text} {\small little text }
+\section{Section2}
+
+\section*{Unlisted Section}
+\section{Lists}
+    \subsection{Unordered Lists}
+        \begin{itemize}
+            \item first item
+            \item [--] second item
+            \item [\textbf{Description}] This is the description
+
+            \begin{itemize}
+                \item nested item 1
+            \end{itemize}
+        \end{itemize}
+    \subsection{Ordered List}
+        \begin{enumerate}
+            \item item 1
+            \begin{enumerate}
+                \item nested item 1
+            \end{enumerate}
+            \begin{itemize}
+                \item unordered
+            \end{itemize}
+        \end{enumerate}
+        
+\section{Tables}
+    \subsection{Basic Tabular}
+        % \begin{center}
+        \begin{tabular}{ | l | c | r | }
+        \hline
+         cell1 & cell2 & cell3 \\ 
+         \hline
+         bigcellcell4 & bigcellcell5 & bigcellcell6 \\  
+         \cline{1-2}
+         cell7 & cell8 & cell9    \\
+         \hline
+        \end{tabular}
+        % \end{center}
+    \subsection{Multi Column}
+        % \begin{center}
+        \begin{tabular}{ | l | c | r | }
+        \hline
+         cell1 & cell2 & cell3 \\ 
+         \hline
+         \multicolumn{2}{|c|}{Merged cols} & bigcellcell6 \\  
+         \hline
+         1 & 2 & 3 \\
+         \cline{1-2}
+         cell7 & cell8 & cell9    \\
+         \hline
+        \end{tabular}
+        % \end{center}
+    \subsection{Multi Row}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            c11 & c12 & c13 \\
+             \hline
+            \multirow{2}{*}{c23} & c22 & c23 \\
+            % \hline
+            \cline{2-3}
+             & c32 & c33 \\
+            \hline
+        \end{tabular}
+    \subsection{custom table}
+        % \begin{tabular}{|l|ll|}
+        % \hline
+        % C1                               & \multicolumn{1}{l|}{C2}                 & C3    \\ \hline
+        % \multirow{2}{*}{{\underline underline} & \multicolumn{1}{l|}{\textbf{Bold Texr}} & dummy \\ \cline{2-3} 
+        %                                  & \multicolumn{2}{r|}{\textit{ita}}               \\ \hline
+        % \end{tabular}
+    \begin{table}[H]
+        \centering
+       \begin{tabular}{|c|c|c|}
+                \hline
+                c11 & c12 & c13 \\
+                 \hline
+                \multirow{2}{*}{c23} & c22 & c23 \\
+                % \hline
+                \cline{2-3}
+                 & c32 & c33 \\
+                \hline
+            \end{tabular}
+        \caption{Example table}
+        \label{tab:table1}
+            
+    \end{table}
+    \subsection{Multi Row}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            c11 & c12 & c13 \\
+             \hline
+            \multirow{2}{*}{c23} & c22 & c23 \\
+            % \hline
+            \cline{2-3}
+             & c32 & c33 \\
+            \hline
+        \end{tabular}
+\section{Equations}
+    \subsection{Basics}
+    This is an equation demo. We have the variables $X$ and $Y_{ij}$ and $Z^{5}$. $a \qquad b \; c$
+        \begin{equation}
+            X = Y_{ij} + Z^{35}
+        \end{equation}
+        
+        \begin{equation*}
+            a = \frac{cd}{ef}
+        \end{equation*}
+
+        \begin{align}
+            x 
+            & = a + a + b + c + c + c \nonumber \\
+            & =  2a + b + 3c
+        \end{align}
+
+        $$a = \frac{cd}{ef}$$
+
+        $$
+        \mathcal{N}(x_i, \mu, \sigma) = \frac{1}{2\sqrt{\pi}\sigma} e ^{-\frac{(x-\mu)^{2}}{2\sigma^2}}
+        $$
+
+        $$\mathcal{N}(x_i; \mu, \sigma) = \frac{1}{2\sqrt{\pi}\sigma^2} e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}$$
+
+
+        $$|x| = \begin{cases}
+                    x & \text{if } x \geq 0 \\
+                    -x & \text{if } x < 0
+                \end{cases}$$
+\end{document}
